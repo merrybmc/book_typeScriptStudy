@@ -9,4 +9,17 @@
 
   // [이름, 성씨, 생년월일] 튜플
   let b: [string, string, number] = ['Byeong Min', 'Cho', 1993];
+  b = ['Cheol Su', 'Kim', 2001];
+
+  // 선택형 요소 튜플
+  let trainFares: [number, number?][] = [[3.75], [8.25, 7.7], [10.5]];
+
+  let moreTrainFares: ([number] | [number, number])[] = [[3.75], [8.25, 7.7], [10.5]];
+
+  // 길이를 갖도록하는 튜플
+  let friend: [string] = ['Sara', 'Tali'];
+  let friends: [string, ...string[]] = ['Sara', 'Tali', 'Chloe', 'Claire'];
+
+  // 이형 배열
+  let list: [number, boolean, ...string[]] = [1, false, 'a', 'b', 'c'];
 }
